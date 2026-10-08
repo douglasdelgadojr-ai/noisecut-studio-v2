@@ -1,0 +1,11 @@
+NoiseCut Studio — Etapa 1: diseño y distribución
+
+Probado:
+- python -m py_compile noisecut.py test_engine.py make_icon.py: correcto.
+- La comprobación sin pantalla creó la ventana de PySide6, añadió un clip de prueba y dibujó la línea de tiempo gráfica.
+- La parte estática de python test_engine.py confirmó la construcción del texto de filtros de imagen, desenfoque, fundido, denoise, volumen, demora y la vista previa 640x360.
+
+No pude verificar:
+- La exportación real de python test_engine.py: se detuvo con FileNotFoundError porque ffmpeg no está en PATH. winget tampoco pudo ejecutarse en este equipo.
+- Reproducción, miniaturas FFmpeg, arrastre con ratón y exportación interactiva con archivos reales.
+- El workflow de GitHub Actions.

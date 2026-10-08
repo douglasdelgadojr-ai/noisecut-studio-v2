@@ -1,0 +1,7 @@
+ETAPA 3 — AUDIO, VOZ Y REDUCCIÓN DE RUIDO
+
+Cambios: filtros de audio por clip y pista (reducción estándar/RNNoise, mejora de voz, normalización, tono y fundidos); descarga opcional del modelo RNNoise; grabación de voz en off WAV y visualización de forma de onda en la línea de tiempo.
+
+Probado: python -m py_compile noisecut.py test_engine.py (OK); python test_engine.py (OK para las comprobaciones estáticas; indica OMItIDO para exportación real); ventana principal PySide6 abierta en modo offscreen (OK).
+
+No pude probar: codificación real de audio/video ni filtros contra FFmpeg, porque FFmpeg no está instalado y winget no se pudo iniciar en este equipo. Tampoco verifiqué físicamente un micrófono o la descarga del modelo IA.

@@ -1,0 +1,7 @@
+ETAPA 5 — FUNCIONES DE IA LOCAL
+
+Cambios: subtítulos con Whisper en segundo plano (idioma y modelo tiny/base/small), segmentos de texto editables y casilla para incrustarlos al exportar. Añadida eliminación local del fondo de persona cuadro a cuadro con U²-NetP; guarda un MOV transparente y conserva el audio. Estabilización vidstab de dos pasadas aparece solo si FFmpeg anuncia el filtro. Las dependencias IA están separadas en requirements-ai.txt.
+
+Probado: py_compile (noisecut.py, test_engine.py, make_icon.py); python test_engine.py (pruebas estáticas OK, incluidas cadenas de estabilización; exportación real omitida); conversión estática de segmentos; controles de interfaz en modo offscreen; icono PNG 512x512 e ICO en seis tamaños.
+
+No pude verificar: ejecutar Whisper o descargar sus modelos; instalar rembg/ONNX o procesar un video con transparencia; usar un micrófono; exportar con FFmpeg; detectar vidstab en el paquete BtbN, ejecutar GitHub Actions o crear el .exe. winget no se pudo iniciar y este equipo no tiene FFmpeg.

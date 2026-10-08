@@ -1,0 +1,7 @@
+ETAPA 4 — EFECTOS, TRANSICIONES Y TEXTO
+
+Cambios: transiciones xfade configurables (fundido, disolver, cortinillas, deslizamientos, círculo, zoom y más) con cruce de audio; viñeta, grano, nitidez, espejo, glitch, blanco y negro, sepia, pixelado; croma verde y LUT .cube; texto con negrita, borde, sombra, fondo y animaciones aparecer/deslizar/escribir. El flujo de GitHub Actions descarga FFmpeg GPL completo de BtbN y comprueba xfade, arnndn y vidstabtransform antes de empaquetar.
+
+Probado: py_compile de noisecut.py y test_engine.py (OK); python test_engine.py (OK para pruebas estáticas de efectos, transiciones, croma, LUT y texto; exportación omitida por falta de FFmpeg); interfaz PySide6 abierta en modo offscreen (OK).
+
+No pude probar: procesar/exportar los nuevos efectos con FFmpeg real; ejecutar el workflow de GitHub Actions; confirmar la presencia de filtros en el paquete BtbN desde este equipo. Estabilización no se ofrece en la interfaz porque su proceso de dos pasadas no está implementado.

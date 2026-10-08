@@ -1,0 +1,12 @@
+NoiseCut Studio — Etapa 2: edición y formatos
+
+Probado:
+- python -m py_compile noisecut.py test_engine.py: correcto.
+- La prueba estática construye texto de filtros para recorte, volteo, rotación, reversa, escala, opacidad, fondo desenfocado y video superpuesto.
+- La prueba estática comprueba las proporciones de lienzo, las opciones de MP3/GIF y el mezclado de audio MP3 sin pista de video.
+- La interfaz de PySide6 arrancó sin pantalla con un clip de prueba y controles de transformación.
+
+No pude verificar:
+- Exportación real de MP4, MP3 o GIF, porque ffmpeg no está disponible y winget no pudo iniciarse.
+- Reproducción, extracción de fotogramas, superposición real, recortes con ratón ni calidad visual de render.
+- GitHub Actions y la compilación del ejecutable.

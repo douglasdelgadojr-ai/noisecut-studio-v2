@@ -1,0 +1,8 @@
+VERIFICACIÓN FINAL
+
+Python: sintaxis compilada correctamente para noisecut.py, test_engine.py y make_icon.py.
+Motor: python test_engine.py completó con OK las pruebas estáticas de filtros de video/audio, transiciones, estilos de texto, subtítulos y estabilización. La exportación real se omitió porque falta FFmpeg; no se considera verificada.
+Interfaz: abrió en modo offscreen con PySide6; se probaron controles de efectos, croma y transiciones. No había FFmpeg para probar estabilización, reproducción ni exportación.
+Iconos: PNG 512x512 e ICO con 16, 32, 48, 64, 128 y 256 píxeles comprobados.
+Empaquetado/Actions: no ejecutados desde este equipo. El workflow descarga FFmpeg GPL de BtbN, revisa xfade/arnndn/vidstabtransform y ejecuta test_engine.py.
+IA: solo se verificaron sintaxis y estructura estática de subtítulos; no se instalaron complementos ni modelos, ni se probaron micrófono o segmentación.
